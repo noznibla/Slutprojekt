@@ -19,7 +19,7 @@ namespace Slutprojekt
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Frågesport.Hide();
         }
     }
 }
