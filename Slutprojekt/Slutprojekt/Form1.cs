@@ -12,6 +12,8 @@ namespace Slutprojekt
 {
     public partial class Form1 : Form
     {
+        List<Panel> listPanel = new List<Panel>();
+
         public Form1()
         {
             InitializeComponent();
