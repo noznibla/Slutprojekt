@@ -34,11 +34,11 @@
             this.Nästa = new System.Windows.Forms.Button();
             this.Tidigare = new System.Windows.Forms.Button();
             this.Fråga1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.Indiska = new System.Windows.Forms.RadioButton();
             this.Engelska = new System.Windows.Forms.RadioButton();
             this.Kinesiska = new System.Windows.Forms.RadioButton();
             this.Ryska = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.Frågesport.SuspendLayout();
             this.Fråga1.SuspendLayout();
             this.SuspendLayout();
@@ -104,18 +104,6 @@
             this.Fråga1.Size = new System.Drawing.Size(799, 396);
             this.Fråga1.TabIndex = 4;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 59);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(567, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Vilket är det mest talade språket i världen?";
-            // 
             // Indiska
             // 
             this.Indiska.AutoSize = true;
@@ -160,17 +148,30 @@
             this.Ryska.Text = "Ryska";
             this.Ryska.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(123, 59);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(567, 33);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Vilket är det mest talade språket i världen?";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Fråga1);
             this.Controls.Add(this.Frågesport);
+            this.Controls.Add(this.Fråga1);
             this.Controls.Add(this.Tidigare);
             this.Controls.Add(this.Nästa);
             this.Name = "Form1";
             this.Text = "Frågesport";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Frågesport.ResumeLayout(false);
             this.Frågesport.PerformLayout();
             this.Fråga1.ResumeLayout(false);
