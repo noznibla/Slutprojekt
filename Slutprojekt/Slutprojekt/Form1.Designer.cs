@@ -38,9 +38,16 @@
             this.Engelska = new System.Windows.Forms.RadioButton();
             this.Kinesiska = new System.Windows.Forms.RadioButton();
             this.Ryska = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Språk = new System.Windows.Forms.Label();
+            this.Fråga2 = new System.Windows.Forms.Panel();
+            this.Baseboll = new System.Windows.Forms.Label();
+            this.sju = new System.Windows.Forms.RadioButton();
+            this.åtta = new System.Windows.Forms.RadioButton();
+            this.nio = new System.Windows.Forms.RadioButton();
+            this.tio = new System.Windows.Forms.RadioButton();
             this.Frågesport.SuspendLayout();
             this.Fråga1.SuspendLayout();
+            this.Fråga2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Titel
@@ -82,6 +89,7 @@
             this.Nästa.TabIndex = 4;
             this.Nästa.Text = "Nästa fråga";
             this.Nästa.UseVisualStyleBackColor = true;
+            this.Nästa.Click += new System.EventHandler(this.Nästa_Click);
             // 
             // Tidigare
             // 
@@ -91,14 +99,15 @@
             this.Tidigare.TabIndex = 5;
             this.Tidigare.Text = "Tidigare fråga";
             this.Tidigare.UseVisualStyleBackColor = true;
+            this.Tidigare.Click += new System.EventHandler(this.Tidigare_Click);
             // 
             // Fråga1
             // 
+            this.Fråga1.Controls.Add(this.Språk);
             this.Fråga1.Controls.Add(this.Indiska);
             this.Fråga1.Controls.Add(this.Engelska);
             this.Fråga1.Controls.Add(this.Kinesiska);
             this.Fråga1.Controls.Add(this.Ryska);
-            this.Fråga1.Controls.Add(this.label1);
             this.Fråga1.Location = new System.Drawing.Point(0, 0);
             this.Fråga1.Name = "Fråga1";
             this.Fråga1.Size = new System.Drawing.Size(799, 396);
@@ -148,17 +157,85 @@
             this.Ryska.Text = "Ryska";
             this.Ryska.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // Språk
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 59);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(567, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Vilket är det mest talade språket i världen?";
+            this.Språk.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Språk.AutoSize = true;
+            this.Språk.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Språk.Location = new System.Drawing.Point(123, 59);
+            this.Språk.Name = "Språk";
+            this.Språk.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Språk.Size = new System.Drawing.Size(567, 33);
+            this.Språk.TabIndex = 0;
+            this.Språk.Text = "Vilket är det mest talade språket i världen?";
+            // 
+            // Fråga2
+            // 
+            this.Fråga2.Controls.Add(this.Baseboll);
+            this.Fråga2.Controls.Add(this.sju);
+            this.Fråga2.Controls.Add(this.åtta);
+            this.Fråga2.Controls.Add(this.nio);
+            this.Fråga2.Controls.Add(this.tio);
+            this.Fråga2.Location = new System.Drawing.Point(0, 0);
+            this.Fråga2.Name = "Fråga2";
+            this.Fråga2.Size = new System.Drawing.Size(799, 396);
+            this.Fråga2.TabIndex = 5;
+            // 
+            // Baseboll
+            // 
+            this.Baseboll.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Baseboll.AutoSize = true;
+            this.Baseboll.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Baseboll.Location = new System.Drawing.Point(123, 59);
+            this.Baseboll.Name = "Baseboll";
+            this.Baseboll.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Baseboll.Size = new System.Drawing.Size(616, 33);
+            this.Baseboll.TabIndex = 0;
+            this.Baseboll.Text = "Hur många spelare finns det i ett baseboll lag?";
+            // 
+            // sju
+            // 
+            this.sju.AutoSize = true;
+            this.sju.Location = new System.Drawing.Point(224, 177);
+            this.sju.Name = "sju";
+            this.sju.Size = new System.Drawing.Size(31, 17);
+            this.sju.TabIndex = 1;
+            this.sju.TabStop = true;
+            this.sju.Text = "7";
+            this.sju.UseVisualStyleBackColor = true;
+            // 
+            // åtta
+            // 
+            this.åtta.AutoSize = true;
+            this.åtta.Location = new System.Drawing.Point(456, 177);
+            this.åtta.Name = "åtta";
+            this.åtta.Size = new System.Drawing.Size(31, 17);
+            this.åtta.TabIndex = 2;
+            this.åtta.TabStop = true;
+            this.åtta.Text = "8";
+            this.åtta.UseVisualStyleBackColor = true;
+            // 
+            // nio
+            // 
+            this.nio.AutoSize = true;
+            this.nio.Location = new System.Drawing.Point(224, 262);
+            this.nio.Name = "nio";
+            this.nio.Size = new System.Drawing.Size(31, 17);
+            this.nio.TabIndex = 3;
+            this.nio.TabStop = true;
+            this.nio.Text = "9";
+            this.nio.UseVisualStyleBackColor = true;
+            // 
+            // tio
+            // 
+            this.tio.AutoSize = true;
+            this.tio.Location = new System.Drawing.Point(456, 262);
+            this.tio.Name = "tio";
+            this.tio.Size = new System.Drawing.Size(37, 17);
+            this.tio.TabIndex = 4;
+            this.tio.TabStop = true;
+            this.tio.Text = "10";
+            this.tio.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -167,6 +244,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Frågesport);
             this.Controls.Add(this.Fråga1);
+            this.Controls.Add(this.Fråga2);
             this.Controls.Add(this.Tidigare);
             this.Controls.Add(this.Nästa);
             this.Name = "Form1";
@@ -176,6 +254,8 @@
             this.Frågesport.PerformLayout();
             this.Fråga1.ResumeLayout(false);
             this.Fråga1.PerformLayout();
+            this.Fråga2.ResumeLayout(false);
+            this.Fråga2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -192,7 +272,13 @@
         private System.Windows.Forms.RadioButton Kinesiska;
         private System.Windows.Forms.RadioButton Engelska;
         private System.Windows.Forms.RadioButton Indiska;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Språk;
+        private System.Windows.Forms.Panel Fråga2;
+        private System.Windows.Forms.Label Baseboll;
+        private System.Windows.Forms.RadioButton sju;
+        private System.Windows.Forms.RadioButton åtta;
+        private System.Windows.Forms.RadioButton nio;
+        private System.Windows.Forms.RadioButton tio;
     }
 }
 

@@ -33,5 +33,17 @@ namespace Slutprojekt
             listPanel.Add(Fråga1);
             listPanel[index].BringToFront();
         }
+
+        private void Nästa_Click(object sender, EventArgs e)
+        {
+            if (index < listPanel.Count - 1)
+                listPanel[++index].BringToFront();
+        }
+
+        private void Tidigare_Click(object sender, EventArgs e)
+        {
+            if (index > 0)
+                listPanel[--index].BringToFront();
+        }
     }
 }
