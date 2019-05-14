@@ -31,6 +31,7 @@ namespace Slutprojekt
         {
             listPanel.Add(Frågesport);
             listPanel.Add(Fråga1);
+            listPanel.Add(Fråga2);
             listPanel[index].BringToFront();
         }
 
@@ -44,6 +45,11 @@ namespace Slutprojekt
         {
             if (index > 0)
                 listPanel[--index].BringToFront();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
