@@ -65,8 +65,8 @@
             this.Ram4 = new System.Windows.Forms.RadioButton();
             this.fabian = new System.Windows.Forms.Label();
             this.Resultat = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ResultatTitel = new System.Windows.Forms.Label();
+            this.SkrivUt = new System.Windows.Forms.Button();
             this.fråga_1 = new System.Windows.Forms.Label();
             this.fråga_2 = new System.Windows.Forms.Label();
             this.fråga_3 = new System.Windows.Forms.Label();
@@ -490,34 +490,34 @@
             // 
             // Resultat
             // 
-            this.Resultat.Controls.Add(this.label2);
-            this.Resultat.Controls.Add(this.button1);
+            this.Resultat.Controls.Add(this.ResultatTitel);
+            this.Resultat.Controls.Add(this.SkrivUt);
             this.Resultat.Location = new System.Drawing.Point(0, 0);
             this.Resultat.Name = "Resultat";
             this.Resultat.Size = new System.Drawing.Size(799, 409);
             this.Resultat.TabIndex = 4;
             // 
-            // label2
+            // ResultatTitel
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(299, 42);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(200, 55);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Resultat";
+            this.ResultatTitel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ResultatTitel.AutoSize = true;
+            this.ResultatTitel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResultatTitel.Location = new System.Drawing.Point(299, 42);
+            this.ResultatTitel.Name = "ResultatTitel";
+            this.ResultatTitel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ResultatTitel.Size = new System.Drawing.Size(200, 55);
+            this.ResultatTitel.TabIndex = 0;
+            this.ResultatTitel.Text = "Resultat";
             // 
-            // button1
+            // SkrivUt
             // 
-            this.button1.Location = new System.Drawing.Point(309, 200);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 56);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tryck för att skriva ut resultatet";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.SkrivUt.Location = new System.Drawing.Point(309, 200);
+            this.SkrivUt.Name = "SkrivUt";
+            this.SkrivUt.Size = new System.Drawing.Size(178, 56);
+            this.SkrivUt.TabIndex = 1;
+            this.SkrivUt.Text = "Tryck för att skriva ut resultatet";
+            this.SkrivUt.UseVisualStyleBackColor = true;
+            this.SkrivUt.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // fråga_1
             // 
@@ -569,13 +569,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Resultat);
             this.Controls.Add(this.Fråga1);
             this.Controls.Add(this.Frågesport);
             this.Controls.Add(this.Fråga2);
             this.Controls.Add(this.Fråga3);
             this.Controls.Add(this.Fråga4);
             this.Controls.Add(this.Fråga5);
-            this.Controls.Add(this.Resultat);
             this.Controls.Add(this.Tidigare);
             this.Controls.Add(this.Nästa);
             this.Name = "Form1";
@@ -638,8 +638,8 @@
         private System.Windows.Forms.RadioButton Ram4;
         private System.Windows.Forms.Label fabian;
         private System.Windows.Forms.Panel Resultat;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label ResultatTitel;
+        private System.Windows.Forms.Button SkrivUt;
         private System.Windows.Forms.Label fråga_1;
         private System.Windows.Forms.Label fråga_2;
         private System.Windows.Forms.Label fråga_3;
