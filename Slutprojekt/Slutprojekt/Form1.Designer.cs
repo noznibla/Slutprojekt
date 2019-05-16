@@ -58,17 +58,27 @@
             this.Adana = new System.Windows.Forms.RadioButton();
             this.Ankara = new System.Windows.Forms.RadioButton();
             this.Fråga5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.Förkortning = new System.Windows.Forms.Label();
+            this.Ram1 = new System.Windows.Forms.RadioButton();
+            this.Ram2 = new System.Windows.Forms.RadioButton();
+            this.Ram3 = new System.Windows.Forms.RadioButton();
+            this.Ram4 = new System.Windows.Forms.RadioButton();
+            this.fabian = new System.Windows.Forms.Label();
+            this.Resultat = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.fråga_1 = new System.Windows.Forms.Label();
+            this.fråga_2 = new System.Windows.Forms.Label();
+            this.fråga_3 = new System.Windows.Forms.Label();
+            this.fråga_4 = new System.Windows.Forms.Label();
+            this.fråga_5 = new System.Windows.Forms.Label();
             this.Frågesport.SuspendLayout();
             this.Fråga1.SuspendLayout();
             this.Fråga2.SuspendLayout();
             this.Fråga3.SuspendLayout();
             this.Fråga4.SuspendLayout();
             this.Fråga5.SuspendLayout();
+            this.Resultat.SuspendLayout();
             this.SuspendLayout();
             // 
             // Titel
@@ -95,11 +105,12 @@
             // 
             // Frågesport
             // 
+            this.Frågesport.Controls.Add(this.fabian);
             this.Frågesport.Controls.Add(this.Titel);
             this.Frågesport.Controls.Add(this.Starta);
             this.Frågesport.Location = new System.Drawing.Point(0, 0);
             this.Frågesport.Name = "Frågesport";
-            this.Frågesport.Size = new System.Drawing.Size(799, 396);
+            this.Frågesport.Size = new System.Drawing.Size(799, 450);
             this.Frågesport.TabIndex = 3;
             // 
             // Nästa
@@ -124,6 +135,7 @@
             // 
             // Fråga1
             // 
+            this.Fråga1.Controls.Add(this.fråga_1);
             this.Fråga1.Controls.Add(this.Språk);
             this.Fråga1.Controls.Add(this.Indiska);
             this.Fråga1.Controls.Add(this.Engelska);
@@ -192,6 +204,7 @@
             // 
             // Fråga2
             // 
+            this.Fråga2.Controls.Add(this.fråga_2);
             this.Fråga2.Controls.Add(this.Baseboll);
             this.Fråga2.Controls.Add(this.åtta);
             this.Fråga2.Controls.Add(this.nio);
@@ -260,6 +273,7 @@
             // 
             // Fråga3
             // 
+            this.Fråga3.Controls.Add(this.fråga_3);
             this.Fråga3.Controls.Add(this.Tänder);
             this.Fråga3.Controls.Add(this.Trettio);
             this.Fråga3.Controls.Add(this.Trettioett);
@@ -328,6 +342,7 @@
             // 
             // Fråga4
             // 
+            this.Fråga4.Controls.Add(this.fråga_4);
             this.Fråga4.Controls.Add(this.Huvudstad);
             this.Fråga4.Controls.Add(this.Istanbul);
             this.Fråga4.Controls.Add(this.Izmir);
@@ -397,83 +412,170 @@
             // 
             // Fråga5
             // 
-            this.Fråga5.Controls.Add(this.label1);
-            this.Fråga5.Controls.Add(this.radioButton1);
-            this.Fråga5.Controls.Add(this.radioButton2);
-            this.Fråga5.Controls.Add(this.radioButton3);
-            this.Fråga5.Controls.Add(this.radioButton4);
+            this.Fråga5.Controls.Add(this.fråga_5);
+            this.Fråga5.Controls.Add(this.Förkortning);
+            this.Fråga5.Controls.Add(this.Ram1);
+            this.Fråga5.Controls.Add(this.Ram2);
+            this.Fråga5.Controls.Add(this.Ram3);
+            this.Fråga5.Controls.Add(this.Ram4);
             this.Fråga5.Location = new System.Drawing.Point(0, 0);
             this.Fråga5.Name = "Fråga5";
             this.Fråga5.Size = new System.Drawing.Size(799, 396);
             this.Fråga5.TabIndex = 8;
             // 
-            // label1
+            // Förkortning
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 59);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(433, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "VIlken är huvudstaden i Turkiet?";
+            this.Förkortning.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Förkortning.AutoSize = true;
+            this.Förkortning.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Förkortning.Location = new System.Drawing.Point(123, 59);
+            this.Förkortning.Name = "Förkortning";
+            this.Förkortning.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Förkortning.Size = new System.Drawing.Size(431, 33);
+            this.Förkortning.TabIndex = 0;
+            this.Förkortning.Text = "Vad står förkortningen RAM för?";
             // 
-            // radioButton1
+            // Ram1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(224, 177);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.Ram1.AutoSize = true;
+            this.Ram1.Location = new System.Drawing.Point(224, 177);
+            this.Ram1.Name = "Ram1";
+            this.Ram1.Size = new System.Drawing.Size(143, 17);
+            this.Ram1.TabIndex = 1;
+            this.Ram1.TabStop = true;
+            this.Ram1.Text = "Random Access Memory";
+            this.Ram1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // Ram2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(456, 177);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.Ram2.AutoSize = true;
+            this.Ram2.Location = new System.Drawing.Point(456, 177);
+            this.Ram2.Name = "Ram2";
+            this.Ram2.Size = new System.Drawing.Size(164, 17);
+            this.Ram2.TabIndex = 2;
+            this.Ram2.TabStop = true;
+            this.Ram2.Text = "Registered Account Manager";
+            this.Ram2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // Ram3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(224, 262);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.Ram3.AutoSize = true;
+            this.Ram3.Location = new System.Drawing.Point(224, 262);
+            this.Ram3.Name = "Ram3";
+            this.Ram3.Size = new System.Drawing.Size(146, 17);
+            this.Ram3.TabIndex = 3;
+            this.Ram3.TabStop = true;
+            this.Ram3.Text = "Relevant Access Memory";
+            this.Ram3.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // Ram4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(456, 262);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.Ram4.AutoSize = true;
+            this.Ram4.Location = new System.Drawing.Point(456, 262);
+            this.Ram4.Name = "Ram4";
+            this.Ram4.Size = new System.Drawing.Size(150, 17);
+            this.Ram4.TabIndex = 4;
+            this.Ram4.TabStop = true;
+            this.Ram4.Text = "Restore Account Manager";
+            this.Ram4.UseVisualStyleBackColor = true;
+            // 
+            // fabian
+            // 
+            this.fabian.AutoSize = true;
+            this.fabian.Location = new System.Drawing.Point(588, 415);
+            this.fabian.Name = "fabian";
+            this.fabian.Size = new System.Drawing.Size(145, 13);
+            this.fabian.TabIndex = 2;
+            this.fabian.Text = "Skapad av: Fabian Albinsson";
+            // 
+            // Resultat
+            // 
+            this.Resultat.Controls.Add(this.label2);
+            this.Resultat.Controls.Add(this.button1);
+            this.Resultat.Location = new System.Drawing.Point(0, 0);
+            this.Resultat.Name = "Resultat";
+            this.Resultat.Size = new System.Drawing.Size(799, 409);
+            this.Resultat.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(299, 42);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(200, 55);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Resultat";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(309, 200);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(178, 56);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Tryck för att skriva ut resultatet";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // fråga_1
+            // 
+            this.fråga_1.AutoSize = true;
+            this.fråga_1.Location = new System.Drawing.Point(9, 9);
+            this.fråga_1.Name = "fråga_1";
+            this.fråga_1.Size = new System.Drawing.Size(60, 13);
+            this.fråga_1.TabIndex = 5;
+            this.fråga_1.Text = "Fråga (1/5)";
+            // 
+            // fråga_2
+            // 
+            this.fråga_2.AutoSize = true;
+            this.fråga_2.Location = new System.Drawing.Point(9, 9);
+            this.fråga_2.Name = "fråga_2";
+            this.fråga_2.Size = new System.Drawing.Size(60, 13);
+            this.fråga_2.TabIndex = 6;
+            this.fråga_2.Text = "Fråga (2/5)";
+            // 
+            // fråga_3
+            // 
+            this.fråga_3.AutoSize = true;
+            this.fråga_3.Location = new System.Drawing.Point(9, 9);
+            this.fråga_3.Name = "fråga_3";
+            this.fråga_3.Size = new System.Drawing.Size(60, 13);
+            this.fråga_3.TabIndex = 7;
+            this.fråga_3.Text = "Fråga (3/5)";
+            // 
+            // fråga_4
+            // 
+            this.fråga_4.AutoSize = true;
+            this.fråga_4.Location = new System.Drawing.Point(9, 9);
+            this.fråga_4.Name = "fråga_4";
+            this.fråga_4.Size = new System.Drawing.Size(60, 13);
+            this.fråga_4.TabIndex = 7;
+            this.fråga_4.Text = "Fråga (4/5)";
+            // 
+            // fråga_5
+            // 
+            this.fråga_5.AutoSize = true;
+            this.fråga_5.Location = new System.Drawing.Point(9, 9);
+            this.fråga_5.Name = "fråga_5";
+            this.fråga_5.Size = new System.Drawing.Size(60, 13);
+            this.fråga_5.TabIndex = 7;
+            this.fråga_5.Text = "Fråga (5/5)";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Fråga5);
-            this.Controls.Add(this.Fråga4);
-            this.Controls.Add(this.Fråga3);
-            this.Controls.Add(this.Fråga2);
             this.Controls.Add(this.Fråga1);
             this.Controls.Add(this.Frågesport);
+            this.Controls.Add(this.Fråga2);
+            this.Controls.Add(this.Fråga3);
+            this.Controls.Add(this.Fråga4);
+            this.Controls.Add(this.Fråga5);
+            this.Controls.Add(this.Resultat);
             this.Controls.Add(this.Tidigare);
             this.Controls.Add(this.Nästa);
             this.Name = "Form1";
@@ -491,6 +593,8 @@
             this.Fråga4.PerformLayout();
             this.Fråga5.ResumeLayout(false);
             this.Fråga5.PerformLayout();
+            this.Resultat.ResumeLayout(false);
+            this.Resultat.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -527,11 +631,20 @@
         private System.Windows.Forms.RadioButton Adana;
         private System.Windows.Forms.RadioButton Ankara;
         private System.Windows.Forms.Panel Fråga5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.Label Förkortning;
+        private System.Windows.Forms.RadioButton Ram1;
+        private System.Windows.Forms.RadioButton Ram2;
+        private System.Windows.Forms.RadioButton Ram3;
+        private System.Windows.Forms.RadioButton Ram4;
+        private System.Windows.Forms.Label fabian;
+        private System.Windows.Forms.Panel Resultat;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label fråga_1;
+        private System.Windows.Forms.Label fråga_2;
+        private System.Windows.Forms.Label fråga_3;
+        private System.Windows.Forms.Label fråga_4;
+        private System.Windows.Forms.Label fråga_5;
     }
 }
 
