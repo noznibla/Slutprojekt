@@ -32,6 +32,9 @@ namespace Slutprojekt
             listPanel.Add(Frågesport);
             listPanel.Add(Fråga1);
             listPanel.Add(Fråga2);
+            listPanel.Add(Fråga3);
+            listPanel.Add(Fråga4);
+            listPanel.Add(Fråga5);
             listPanel[index].BringToFront();
         }
 
