@@ -33,7 +33,6 @@
             this.Frågesport = new System.Windows.Forms.Panel();
             this.fabian = new System.Windows.Forms.Label();
             this.Nästa = new System.Windows.Forms.Button();
-            this.Tidigare = new System.Windows.Forms.Button();
             this.Fråga1 = new System.Windows.Forms.Panel();
             this.fråga_1 = new System.Windows.Forms.Label();
             this.Språk = new System.Windows.Forms.Label();
@@ -125,23 +124,13 @@
             // 
             // Nästa
             // 
-            this.Nästa.Location = new System.Drawing.Point(708, 415);
+            this.Nästa.Location = new System.Drawing.Point(610, 405);
             this.Nästa.Name = "Nästa";
             this.Nästa.Size = new System.Drawing.Size(80, 23);
             this.Nästa.TabIndex = 4;
             this.Nästa.Text = "Nästa fråga";
             this.Nästa.UseVisualStyleBackColor = true;
             this.Nästa.Click += new System.EventHandler(this.Nästa_Click);
-            // 
-            // Tidigare
-            // 
-            this.Tidigare.Location = new System.Drawing.Point(12, 415);
-            this.Tidigare.Name = "Tidigare";
-            this.Tidigare.Size = new System.Drawing.Size(80, 23);
-            this.Tidigare.TabIndex = 5;
-            this.Tidigare.Text = "Tidigare fråga";
-            this.Tidigare.UseVisualStyleBackColor = true;
-            this.Tidigare.Click += new System.EventHandler(this.Tidigare_Click);
             // 
             // Fråga1
             // 
@@ -542,7 +531,7 @@
             this.Resultat.Controls.Add(this.SkrivUt);
             this.Resultat.Location = new System.Drawing.Point(0, 0);
             this.Resultat.Name = "Resultat";
-            this.Resultat.Size = new System.Drawing.Size(799, 409);
+            this.Resultat.Size = new System.Drawing.Size(799, 396);
             this.Resultat.TabIndex = 4;
             // 
             // fil
@@ -588,7 +577,6 @@
             this.Controls.Add(this.Fråga4);
             this.Controls.Add(this.Fråga5);
             this.Controls.Add(this.Resultat);
-            this.Controls.Add(this.Tidigare);
             this.Controls.Add(this.Nästa);
             this.Name = "Form1";
             this.Text = "Frågesport";
@@ -617,7 +605,6 @@
         private System.Windows.Forms.Button Starta;
         private System.Windows.Forms.Panel Frågesport;
         private System.Windows.Forms.Button Nästa;
-        private System.Windows.Forms.Button Tidigare;
         private System.Windows.Forms.Panel Fråga1;
         private System.Windows.Forms.RadioButton Ryska;
         private System.Windows.Forms.RadioButton Kinesiska;
