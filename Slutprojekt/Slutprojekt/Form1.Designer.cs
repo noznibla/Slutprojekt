@@ -31,47 +31,48 @@
             this.Titel = new System.Windows.Forms.Label();
             this.Starta = new System.Windows.Forms.Button();
             this.Frågesport = new System.Windows.Forms.Panel();
+            this.fabian = new System.Windows.Forms.Label();
             this.Nästa = new System.Windows.Forms.Button();
             this.Tidigare = new System.Windows.Forms.Button();
             this.Fråga1 = new System.Windows.Forms.Panel();
+            this.fråga_1 = new System.Windows.Forms.Label();
             this.Språk = new System.Windows.Forms.Label();
             this.Indiska = new System.Windows.Forms.RadioButton();
             this.Engelska = new System.Windows.Forms.RadioButton();
             this.Kinesiska = new System.Windows.Forms.RadioButton();
             this.Ryska = new System.Windows.Forms.RadioButton();
             this.Fråga2 = new System.Windows.Forms.Panel();
+            this.fråga_2 = new System.Windows.Forms.Label();
             this.Baseboll = new System.Windows.Forms.Label();
             this.åtta = new System.Windows.Forms.RadioButton();
             this.nio = new System.Windows.Forms.RadioButton();
             this.tio = new System.Windows.Forms.RadioButton();
             this.elva = new System.Windows.Forms.RadioButton();
             this.Fråga3 = new System.Windows.Forms.Panel();
+            this.fråga_3 = new System.Windows.Forms.Label();
             this.Tänder = new System.Windows.Forms.Label();
             this.Trettio = new System.Windows.Forms.RadioButton();
             this.Trettioett = new System.Windows.Forms.RadioButton();
             this.Trettiotvå = new System.Windows.Forms.RadioButton();
             this.Trettiotre = new System.Windows.Forms.RadioButton();
             this.Fråga4 = new System.Windows.Forms.Panel();
+            this.fråga_4 = new System.Windows.Forms.Label();
             this.Huvudstad = new System.Windows.Forms.Label();
             this.Istanbul = new System.Windows.Forms.RadioButton();
             this.Izmir = new System.Windows.Forms.RadioButton();
             this.Adana = new System.Windows.Forms.RadioButton();
             this.Ankara = new System.Windows.Forms.RadioButton();
             this.Fråga5 = new System.Windows.Forms.Panel();
+            this.fråga_5 = new System.Windows.Forms.Label();
             this.Förkortning = new System.Windows.Forms.Label();
             this.Ram1 = new System.Windows.Forms.RadioButton();
             this.Ram2 = new System.Windows.Forms.RadioButton();
             this.Ram3 = new System.Windows.Forms.RadioButton();
             this.Ram4 = new System.Windows.Forms.RadioButton();
-            this.fabian = new System.Windows.Forms.Label();
             this.Resultat = new System.Windows.Forms.Panel();
+            this.fil = new System.Windows.Forms.Label();
             this.ResultatTitel = new System.Windows.Forms.Label();
             this.SkrivUt = new System.Windows.Forms.Button();
-            this.fråga_1 = new System.Windows.Forms.Label();
-            this.fråga_2 = new System.Windows.Forms.Label();
-            this.fråga_3 = new System.Windows.Forms.Label();
-            this.fråga_4 = new System.Windows.Forms.Label();
-            this.fråga_5 = new System.Windows.Forms.Label();
             this.Frågesport.SuspendLayout();
             this.Fråga1.SuspendLayout();
             this.Fråga2.SuspendLayout();
@@ -113,6 +114,15 @@
             this.Frågesport.Size = new System.Drawing.Size(799, 450);
             this.Frågesport.TabIndex = 3;
             // 
+            // fabian
+            // 
+            this.fabian.AutoSize = true;
+            this.fabian.Location = new System.Drawing.Point(588, 415);
+            this.fabian.Name = "fabian";
+            this.fabian.Size = new System.Drawing.Size(145, 13);
+            this.fabian.TabIndex = 2;
+            this.fabian.Text = "Skapad av: Fabian Albinsson";
+            // 
             // Nästa
             // 
             this.Nästa.Location = new System.Drawing.Point(708, 415);
@@ -145,6 +155,15 @@
             this.Fråga1.Name = "Fråga1";
             this.Fråga1.Size = new System.Drawing.Size(799, 396);
             this.Fråga1.TabIndex = 4;
+            // 
+            // fråga_1
+            // 
+            this.fråga_1.AutoSize = true;
+            this.fråga_1.Location = new System.Drawing.Point(9, 9);
+            this.fråga_1.Name = "fråga_1";
+            this.fråga_1.Size = new System.Drawing.Size(60, 13);
+            this.fråga_1.TabIndex = 5;
+            this.fråga_1.Text = "Fråga (1/5)";
             // 
             // Språk
             // 
@@ -190,6 +209,7 @@
             this.Kinesiska.TabStop = true;
             this.Kinesiska.Text = "Kinesiska";
             this.Kinesiska.UseVisualStyleBackColor = true;
+            this.Kinesiska.CheckedChanged += new System.EventHandler(this.Kinesiska_CheckedChanged);
             // 
             // Ryska
             // 
@@ -214,6 +234,15 @@
             this.Fråga2.Name = "Fråga2";
             this.Fråga2.Size = new System.Drawing.Size(799, 396);
             this.Fråga2.TabIndex = 5;
+            // 
+            // fråga_2
+            // 
+            this.fråga_2.AutoSize = true;
+            this.fråga_2.Location = new System.Drawing.Point(9, 9);
+            this.fråga_2.Name = "fråga_2";
+            this.fråga_2.Size = new System.Drawing.Size(60, 13);
+            this.fråga_2.TabIndex = 6;
+            this.fråga_2.Text = "Fråga (2/5)";
             // 
             // Baseboll
             // 
@@ -284,6 +313,15 @@
             this.Fråga3.Size = new System.Drawing.Size(799, 396);
             this.Fråga3.TabIndex = 6;
             // 
+            // fråga_3
+            // 
+            this.fråga_3.AutoSize = true;
+            this.fråga_3.Location = new System.Drawing.Point(9, 9);
+            this.fråga_3.Name = "fråga_3";
+            this.fråga_3.Size = new System.Drawing.Size(60, 13);
+            this.fråga_3.TabIndex = 7;
+            this.fråga_3.Text = "Fråga (3/5)";
+            // 
             // Tänder
             // 
             this.Tänder.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -352,6 +390,15 @@
             this.Fråga4.Name = "Fråga4";
             this.Fråga4.Size = new System.Drawing.Size(799, 396);
             this.Fråga4.TabIndex = 7;
+            // 
+            // fråga_4
+            // 
+            this.fråga_4.AutoSize = true;
+            this.fråga_4.Location = new System.Drawing.Point(9, 9);
+            this.fråga_4.Name = "fråga_4";
+            this.fråga_4.Size = new System.Drawing.Size(60, 13);
+            this.fråga_4.TabIndex = 7;
+            this.fråga_4.Text = "Fråga (4/5)";
             // 
             // Huvudstad
             // 
@@ -423,6 +470,15 @@
             this.Fråga5.Size = new System.Drawing.Size(799, 396);
             this.Fråga5.TabIndex = 8;
             // 
+            // fråga_5
+            // 
+            this.fråga_5.AutoSize = true;
+            this.fråga_5.Location = new System.Drawing.Point(9, 9);
+            this.fråga_5.Name = "fråga_5";
+            this.fråga_5.Size = new System.Drawing.Size(60, 13);
+            this.fråga_5.TabIndex = 7;
+            this.fråga_5.Text = "Fråga (5/5)";
+            // 
             // Förkortning
             // 
             this.Förkortning.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -479,23 +535,24 @@
             this.Ram4.Text = "Restore Account Manager";
             this.Ram4.UseVisualStyleBackColor = true;
             // 
-            // fabian
-            // 
-            this.fabian.AutoSize = true;
-            this.fabian.Location = new System.Drawing.Point(588, 415);
-            this.fabian.Name = "fabian";
-            this.fabian.Size = new System.Drawing.Size(145, 13);
-            this.fabian.TabIndex = 2;
-            this.fabian.Text = "Skapad av: Fabian Albinsson";
-            // 
             // Resultat
             // 
+            this.Resultat.Controls.Add(this.fil);
             this.Resultat.Controls.Add(this.ResultatTitel);
             this.Resultat.Controls.Add(this.SkrivUt);
             this.Resultat.Location = new System.Drawing.Point(0, 0);
             this.Resultat.Name = "Resultat";
             this.Resultat.Size = new System.Drawing.Size(799, 409);
             this.Resultat.TabIndex = 4;
+            // 
+            // fil
+            // 
+            this.fil.AutoSize = true;
+            this.fil.Location = new System.Drawing.Point(296, 325);
+            this.fil.Name = "fil";
+            this.fil.Size = new System.Drawing.Size(150, 13);
+            this.fil.TabIndex = 2;
+            this.fil.Text = "Filen kommer att heta Resultat";
             // 
             // ResultatTitel
             // 
@@ -519,63 +576,18 @@
             this.SkrivUt.UseVisualStyleBackColor = true;
             this.SkrivUt.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // fråga_1
-            // 
-            this.fråga_1.AutoSize = true;
-            this.fråga_1.Location = new System.Drawing.Point(9, 9);
-            this.fråga_1.Name = "fråga_1";
-            this.fråga_1.Size = new System.Drawing.Size(60, 13);
-            this.fråga_1.TabIndex = 5;
-            this.fråga_1.Text = "Fråga (1/5)";
-            // 
-            // fråga_2
-            // 
-            this.fråga_2.AutoSize = true;
-            this.fråga_2.Location = new System.Drawing.Point(9, 9);
-            this.fråga_2.Name = "fråga_2";
-            this.fråga_2.Size = new System.Drawing.Size(60, 13);
-            this.fråga_2.TabIndex = 6;
-            this.fråga_2.Text = "Fråga (2/5)";
-            // 
-            // fråga_3
-            // 
-            this.fråga_3.AutoSize = true;
-            this.fråga_3.Location = new System.Drawing.Point(9, 9);
-            this.fråga_3.Name = "fråga_3";
-            this.fråga_3.Size = new System.Drawing.Size(60, 13);
-            this.fråga_3.TabIndex = 7;
-            this.fråga_3.Text = "Fråga (3/5)";
-            // 
-            // fråga_4
-            // 
-            this.fråga_4.AutoSize = true;
-            this.fråga_4.Location = new System.Drawing.Point(9, 9);
-            this.fråga_4.Name = "fråga_4";
-            this.fråga_4.Size = new System.Drawing.Size(60, 13);
-            this.fråga_4.TabIndex = 7;
-            this.fråga_4.Text = "Fråga (4/5)";
-            // 
-            // fråga_5
-            // 
-            this.fråga_5.AutoSize = true;
-            this.fråga_5.Location = new System.Drawing.Point(9, 9);
-            this.fråga_5.Name = "fråga_5";
-            this.fråga_5.Size = new System.Drawing.Size(60, 13);
-            this.fråga_5.TabIndex = 7;
-            this.fråga_5.Text = "Fråga (5/5)";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Resultat);
-            this.Controls.Add(this.Fråga1);
             this.Controls.Add(this.Frågesport);
+            this.Controls.Add(this.Fråga1);
             this.Controls.Add(this.Fråga2);
             this.Controls.Add(this.Fråga3);
             this.Controls.Add(this.Fråga4);
             this.Controls.Add(this.Fråga5);
+            this.Controls.Add(this.Resultat);
             this.Controls.Add(this.Tidigare);
             this.Controls.Add(this.Nästa);
             this.Name = "Form1";
@@ -645,6 +657,7 @@
         private System.Windows.Forms.Label fråga_3;
         private System.Windows.Forms.Label fråga_4;
         private System.Windows.Forms.Label fråga_5;
+        private System.Windows.Forms.Label fil;
     }
 }
 

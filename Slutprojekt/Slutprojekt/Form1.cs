@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace Slutprojekt
     {
         List<Panel> listPanel = new List<Panel>(); /*Skapar en lista till de olika panelerna*/
         int index;
+
+        int poäng = 0;
 
         public Form1()
         {
@@ -37,10 +40,36 @@ namespace Slutprojekt
             listPanel[index].BringToFront();
         }
 
-        private void Nästa_Click(object sender, EventArgs e) /*Byter till nästa sida*/
+        private void Nästa_Click(object sender, EventArgs e) /*Byter till nästa sida och checkar av om rätt svar är i tryckt vilket ger ett poäng*/
         {
+            if(index == 0 && Kinesiska.Checked)
+            {
+                poäng++;
+            }
+
+            if (index == 1 && nio.Checked)
+            {
+                poäng++;
+            }
+
+            if (index == 2 && Trettiotvå.Checked)
+            {
+                poäng++;
+            }
+
+            if (index == 3 && Ankara.Checked)
+            {
+                poäng++;
+            }
+
+            if (index == 4 && Ram1.Checked)
+            {
+                poäng++;
+            }
+
             if (index < listPanel.Count - 1)
                 listPanel[++index].BringToFront();
+
         }
 
         private void Tidigare_Click(object sender, EventArgs e) /*Byter till föregående sida*/
@@ -54,9 +83,14 @@ namespace Slutprojekt
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e) /*Skriver ut resultatet till en txt fil*/
         {
+            StreamWriter sw = new StreamWriter("Resultat.txt", true);
+            sw.WriteLine("Du fick följande antal rätt: " + poäng);
+        }
 
+        private void Kinesiska_CheckedChanged(object sender, EventArgs e)
+        {
         }
     }
 }
