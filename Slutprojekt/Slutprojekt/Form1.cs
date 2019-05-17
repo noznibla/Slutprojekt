@@ -42,27 +42,27 @@ namespace Slutprojekt
 
         private void Nästa_Click(object sender, EventArgs e) /*Byter till nästa sida och checkar av om rätt svar är i tryckt vilket ger ett poäng*/
         {
-            if(index == 0 && Kinesiska.Checked)
+            if(index == 1 && Kinesiska.Checked)
             {
                 poäng++;
             }
 
-            if (index == 1 && nio.Checked)
+            if (index == 2 && nio.Checked)
             {
                 poäng++;
             }
 
-            if (index == 2 && Trettiotvå.Checked)
+            if (index == 3 && Trettiotvå.Checked)
             {
                 poäng++;
             }
 
-            if (index == 3 && Ankara.Checked)
+            if (index == 4 && Ankara.Checked)
             {
                 poäng++;
             }
 
-            if (index == 4 && Ram1.Checked)
+            if (index == 5 && Ram1.Checked)
             {
                 poäng++;
             }
@@ -86,7 +86,8 @@ namespace Slutprojekt
         private void button1_Click_1(object sender, EventArgs e) /*Skriver ut resultatet till en txt fil*/
         {
             StreamWriter sw = new StreamWriter("Resultat.txt", true);
-            sw.WriteLine("Du fick följande antal rätt: " + poäng);
+            sw.WriteLine("Du fick följande antal rätt av 5 frågor: " + poäng);
+            sw.Close();
         }
 
         private void Kinesiska_CheckedChanged(object sender, EventArgs e)

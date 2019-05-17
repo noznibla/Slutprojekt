@@ -111,7 +111,7 @@
             this.Frågesport.Controls.Add(this.Starta);
             this.Frågesport.Location = new System.Drawing.Point(0, 0);
             this.Frågesport.Name = "Frågesport";
-            this.Frågesport.Size = new System.Drawing.Size(799, 450);
+            this.Frågesport.Size = new System.Drawing.Size(799, 409);
             this.Frågesport.TabIndex = 3;
             // 
             // fabian
