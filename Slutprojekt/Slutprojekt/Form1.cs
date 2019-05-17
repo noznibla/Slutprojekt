@@ -26,6 +26,7 @@ namespace Slutprojekt
         private void button1_Click(object sender, EventArgs e) /*Gömmer första sidan*/
         {
             Frågesport.Hide();
+            index++;
         }
 
         private void Form1_Load(object sender, EventArgs e) /*Lägger till alla sidor (alla paneler)*/
@@ -86,7 +87,7 @@ namespace Slutprojekt
         private void button1_Click_1(object sender, EventArgs e) /*Skriver ut resultatet till en txt fil*/
         {
             StreamWriter sw = new StreamWriter("Resultat.txt", true);
-            sw.WriteLine("Du fick följande antal rätt av 5 frågor: " + poäng);
+            sw.WriteLine("Du fick " + poäng + " rätt av fem möjliga");
             sw.Close();
         }
 

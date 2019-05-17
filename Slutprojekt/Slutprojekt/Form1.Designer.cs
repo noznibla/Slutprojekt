@@ -111,7 +111,7 @@
             this.Frågesport.Controls.Add(this.Starta);
             this.Frågesport.Location = new System.Drawing.Point(0, 0);
             this.Frågesport.Name = "Frågesport";
-            this.Frågesport.Size = new System.Drawing.Size(799, 409);
+            this.Frågesport.Size = new System.Drawing.Size(799, 451);
             this.Frågesport.TabIndex = 3;
             // 
             // fabian
@@ -548,11 +548,11 @@
             // fil
             // 
             this.fil.AutoSize = true;
-            this.fil.Location = new System.Drawing.Point(296, 325);
+            this.fil.Location = new System.Drawing.Point(306, 328);
             this.fil.Name = "fil";
-            this.fil.Size = new System.Drawing.Size(150, 13);
+            this.fil.Size = new System.Drawing.Size(164, 13);
             this.fil.TabIndex = 2;
-            this.fil.Text = "Filen kommer att heta Resultat";
+            this.fil.Text = "Filen kommer att heta Resultat.txt";
             // 
             // ResultatTitel
             // 
